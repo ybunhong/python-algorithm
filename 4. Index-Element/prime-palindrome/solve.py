@@ -20,8 +20,10 @@ def palindromeDetection(n):
 def solve(n, m):
     ctn = 0
     for i in range(n, m+1):
-        if primeDetection(i) and palindromeDetection(i):
+        # palindrome is more less than prime therefore we should check palindrome frist for faster
+        if palindromeDetection(i) and primeDetection(i):
             ctn += 1
+            print(i)
     return ctn
 
 
