@@ -12,6 +12,25 @@
 
 # print(palindromeNum(10, 100000000000))
 
+# def palindromNum(n):
+#     r, m = 0, n
+#     while m > 0:
+#         r *= 10
+#         r += m % 10
+#         m //= 10
+#     return n == r
+
+
+# def solve(n, m):
+#     cnt = 0
+#     for i in range(n, m+1):
+#         if palindromNum(i):
+#             cnt += 1
+#     return cnt
+
+
+# print(solve(10, 100))
+
 def is_palindrome(n):
     s = str(n)
     return s == s[::-1]
